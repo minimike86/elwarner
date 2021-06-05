@@ -1,0 +1,35 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-drawer {
+  width: 330px;
+}
+
+.mat-icon-link {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  display: flex;
+  flex-grow: 1;
+}
+
+mat-drawer-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+mat-drawer-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+router-outlet {
+  display: none;
+}
+
+footer {
+  flex-shrink: 0;
+}

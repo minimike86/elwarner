@@ -1,0 +1,25 @@
+<ng-container *ngIf="blogs.length > 0; else noBlogs;">
+  <div class="grid-container">
+    <mat-card *ngFor="let blog of blogs">
+      <mat-card-header>
+        <img mat-card-avatar [src]="blog.iconSrc" alt="avatar">
+        <mat-card-title>{{ blog.title }}</mat-card-title>
+        <mat-card-subtitle>{{ blog.subTitle }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="blog.imgSrc" alt="image">
+      <mat-card-content>
+        <p>{{ blog.description }}</p>
+      </mat-card-content>
+      <mat-card-actions [align]="'end'">
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</ng-container>
+
+<ng-template #noBlogs>
+  <mat-card style="margin: 8px; display: flex; flex-grow: 1; align-self: center;">
+    No blog content yet... Check back soon!
+  </mat-card>
+</ng-template>

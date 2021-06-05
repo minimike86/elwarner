@@ -1,0 +1,12 @@
+.d-grid {
+  display: grid;
+  height: 100%;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ac-center {
+  align-content: center;
+}
